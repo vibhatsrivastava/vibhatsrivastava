@@ -274,8 +274,6 @@ function Deploy-IntelligentServer {
 
 End-to-end automated workflow with AI-enhanced monitoring and self-healing capabilities:
 
----
-
 ### 📊 Tech Stack Proficiency
 
 ```plaintext
