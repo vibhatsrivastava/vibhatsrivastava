@@ -87,11 +87,9 @@ Architected automation frameworks helping teams reduce deployment time by **95%*
   <em>Leading automation initiatives across multiple organizations</em>
 </p>
 
-<br>
-
-<table>
+<table width="100%" style="border: none; border-collapse: collapse;">
 <tr>
-<td width="33%" align="center">
+<td width="33%" align="center" valign="top">
 <br>
 
 #### 🔄 Ansible Automation
@@ -109,7 +107,7 @@ rapid server provisioning
 <br>
 
 </td>
-<td width="33%" align="center">
+<td width="33%" align="center" valign="top">
 <br>
 
 #### ⚡ PowerShell Automation
@@ -127,7 +125,7 @@ enterprise server management
 <br>
 
 </td>
-<td width="33%" align="center">
+<td width="34%" align="center" valign="top">
 <br>
 
 #### 🏗️ Terraform Automation
@@ -176,120 +174,6 @@ graph LR
 
 ---
 
-### 💻 Code Samples
-
-<details>
-<summary>🎭 <b>Ansible: Intelligent Auto-Scaling Deployment</b></summary>
-
-```yaml
----
-# Dynamic server provisioning with workload analysis
-- name: Intelligent Infrastructure Scaling
-  hosts: dynamic_inventory
-  gather_facts: yes
-  
-  tasks:
-    - name: Analyze current workload patterns
-      set_fact:
-        required_capacity: "{{ (current_load | float * 1.3) | round | int }}"
-        optimal_instance_type: "{{ workload_analyzer.recommend(cpu_usage, memory_usage) }}"
-    
-    - name: Deploy optimized infrastructure
-      cloud_instance:
-        count: "{{ required_capacity }}"
-        type: "{{ optimal_instance_type }}"
-        auto_scaling: true
-        health_check_enabled: true
-      register: deployment_result
-    
-    - name: Configure self-healing monitoring
-      monitoring_agent:
-        instances: "{{ deployment_result.instance_ids }}"
-        auto_remediate: true
-        notification_webhook: "{{ ops_channel }}"
-```
-
-</details>
-
-<details>
-<summary>🏗️ <b>Terraform: Multi-Cloud Infrastructure Module</b></summary>
-
-```hcl
-# Self-documenting, reusable infrastructure module
-module "intelligent_deployment" {
-  source  = "./modules/auto-scaling-cluster"
-  version = "~> 2.0"
-  
-  cluster_config = {
-    min_size         = 3
-    max_size         = 50
-    desired_capacity = var.initial_capacity
-    
-    scaling_policy = {
-      target_cpu_utilization = 70
-      predictive_scaling     = true
-      ai_optimization       = true
-    }
-  }
-  
-  monitoring = {
-    enable_ai_insights    = true
-    auto_remediation      = true
-    anomaly_detection     = true
-  }
-  
-  tags = {
-    ManagedBy   = "Terraform"
-    AutoScaling = "AI-Enhanced"
-    Environment = var.environment
-  }
-}
-```
-
-</details>
-
-<details>
-<summary>⚡ <b>PowerShell: Zero-Touch Server Provisioning</b></summary>
-
-```powershell
-# Automated server provisioning with validation
-function Deploy-IntelligentServer {
-    param(
-        [Parameter(Mandatory)]
-        [string]$ServerRole,
-        
-        [Parameter(Mandatory)]
-        [hashtable]$Configuration
-    )
-    
-    # AI-powered configuration validation
-    $ValidationResult = Invoke-ConfigurationAnalyzer -Config $Configuration
-    
-    if ($ValidationResult.IsOptimal) {
-        # Deploy with desired state configuration
-        Start-DSCConfiguration `
-            -Path "C:\DSC\$ServerRole" `
-            -ComputerName $Configuration.TargetServers `
-            -Wait -Force -Verbose
-        
-        # Enable self-healing
-        Enable-AutoRemediation -Servers $Configuration.TargetServers
-        
-        # Configure AI monitoring
-        Register-AnomalyDetection -ServerRole $ServerRole
-        
-        Write-Host "✅ Deployment complete. Self-healing enabled." -ForegroundColor Green
-    }
-    else {
-        Write-Warning "⚠️ Configuration needs optimization: $($ValidationResult.Recommendations)"
-    }
-}
-```
-
-</details>
-
----
-
 ### 🔄 DevOps Pipeline Architecture
 
 End-to-end automated workflow with AI-enhanced monitoring and self-healing capabilities:
@@ -309,9 +193,9 @@ AI/ML       ████████████░░░░░░░ 60%
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=vibhatsrivastava&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170" />
+<img src="https://github-readme-stats.vercel.app/api?username=vibhatsrivastava&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170" />&nbsp;&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=vibhatsrivastava&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="170" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=vibhatsrivastava&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="170" />
+<br><br>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vibhatsrivastava&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 
