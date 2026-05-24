@@ -87,42 +87,62 @@ Architected automation frameworks helping teams reduce deployment time by **95%*
   <em>Leading automation initiatives across multiple organizations</em>
 </p>
 
+<br>
+
 <table>
 <tr>
 <td width="33%" align="center">
+<br>
 
 #### 🔄 Ansible Automation
+
 <a href="https://github.com/Ansible-ServerAutomation">
   <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
 </a>
+
+<br>
 
 **Configuration Management**  
 Playbooks & roles enabling  
 rapid server provisioning
 
+<br>
+
 </td>
 <td width="33%" align="center">
+<br>
 
 #### ⚡ PowerShell Automation
+
 <a href="https://github.com/PowerShell-ServerAutomation">
   <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" />
 </a>
+
+<br>
 
 **Windows Infrastructure**  
 DSC & automation toolkit for  
 enterprise server management
 
+<br>
+
 </td>
 <td width="33%" align="center">
+<br>
 
 #### 🏗️ Terraform Automation
+
 <a href="https://github.com/Terraform-ServerAutomation">
   <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
 </a>
 
+<br>
+
 **Infrastructure as Code**  
 Multi-cloud modules &  
 reusable patterns
+
+<br>
 
 </td>
 </tr>
@@ -274,6 +294,37 @@ function Deploy-IntelligentServer {
 
 End-to-end automated workflow with AI-enhanced monitoring and self-healing capabilities:
 
+```mermaid
+%%{init: {'theme':'dark'}}%%
+graph TB
+    subgraph "Development"
+        A[Code Commit] --> B[Git Repository]
+    end
+    subgraph "CI/CD Pipeline"
+        B --> C{Automated Tests}
+        C -->|✅ Pass| D[Build & Package]
+        C -->|❌ Fail| E[Notify Team]
+        D --> F[Containerize]
+    end
+    subgraph "Infrastructure Deployment"
+        F --> G[Terraform Apply]
+        G --> H[Ansible Configure]
+        H --> I[Health Check]
+    end
+    subgraph "AI Intelligence Layer"
+        I --> J{AI Analysis}
+        J -->|🚨 Anomaly| K[Auto-Heal]
+        J -->|✅ Normal| L[Monitor]
+        K --> L
+        L --> J
+    end
+    style J fill:#ff6b6b
+    style K fill:#4ecdc4
+    style L fill:#95e1d3
+```
+
+---
+
 ### 📊 Tech Stack Proficiency
 
 ```plaintext
@@ -289,9 +340,7 @@ AI/ML       ████████████░░░░░░░ 60%
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=vibhatsrivastava&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=vibhatsrivastava&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="170" />
+<img src="https://github-readme-stats.vercel.app/api?username=vibhatsrivastava&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=vibhatsrivastava&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="170" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vibhatsrivastava&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 
