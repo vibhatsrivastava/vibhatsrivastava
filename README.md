@@ -274,35 +274,6 @@ function Deploy-IntelligentServer {
 
 End-to-end automated workflow with AI-enhanced monitoring and self-healing capabilities:
 
-```mermaid
-%%{init: {'theme':'dark'}}%%
-graph TB
-    subgraph "Development"
-        A[Code Commit] --> B[Git Repository]
-    end
-    subgraph "CI/CD Pipeline"
-        B --> C{Automated Tests}
-        C -->|✅ Pass| D[Build & Package]
-        C -->|❌ Fail| E[Notify Team]
-        D --> F[Containerize]
-    end
-    subgraph "Infrastructure Deployment"
-        F --> G[Terraform Apply]
-        G --> H[Ansible Configure]
-        H --> I[Health Check]
-    end
-    subgraph "AI Intelligence Layer"
-        I --> J{AI Analysis}
-        J -->|🚨 Anomaly| K[Auto-Heal]
-        J -->|✅ Normal| L[Monitor]
-        K --> L
-        L --> J
-    end
-    style J fill:#ff6b6b
-    style K fill:#4ecdc4
-    style L fill:#95e1d3
-```
-
 ---
 
 ### 📊 Tech Stack Proficiency
