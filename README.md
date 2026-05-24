@@ -74,8 +74,6 @@ Architected automation frameworks helping teams reduce deployment time by **95%*
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-**Self-Hosted LLMs:** GPT-OSS:20B, Llama 3, Mistral
-
 </details>
 
 ---
